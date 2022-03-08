@@ -10,7 +10,11 @@ func main() {
 	log.SetFlags(0)
 
 
-	message, err := greetings.Hello("TOm")
+	names := []string{
+		"Jack",
+		"Tom",
+	}
+	message, err := greetings.Hellos(names)
 	
 	if err != nil {
 		log.Fatal(err)
