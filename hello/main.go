@@ -3,11 +3,13 @@ import (
 	"fmt"
 	"greetings"
 	"log"
+  "rsc.io/quote"
 )
 
 func main() {
 	log.SetPrefix("messages:")
 	log.SetFlags(0)
+	fmt.Println(quote.Go())
 
 
 	names := []string{
