@@ -24,7 +24,6 @@ func SumIntsOrFloats[K comparable, V int64 | float64](m map[K]V) V {
 	}
 	return s
 }
-
 type Number interface {
 	int64 | float64
 }
